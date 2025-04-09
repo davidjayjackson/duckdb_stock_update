@@ -8,7 +8,7 @@ from alpha_vantage.timeseries import TimeSeries
 con = duckdb.connect(database='./etf.duckdb', read_only=False)
 
 # Connect to Alpha Vantage
-ts = TimeSeries(key='35RWNNYNVVW23JS1', output_format='pandas')
+ts = TimeSeries(key='<Put Your API Key Here>', output_format='pandas')
 
 # Load ET Data
 ET, meta_data = ts.get_daily(symbol='ET', outputsize='full')
